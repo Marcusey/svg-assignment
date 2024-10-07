@@ -1,0 +1,101 @@
+.pumpkin-frame {
+    border: 1px solid orange;
+    border-radius: 15rem;
+    width: 35rem;
+    padding: 5rem;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    margin: 4rem auto;
+    box-shadow: 0px 4px 8px rgba(255, 98, 0, 0.3);
+}
+
+#pumpkin-container {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+}
+
+#pumpkin {
+    width: 100%;
+    height: auto;
+}
+
+#eye-left, #eye-right {
+    position: absolute;
+    width: 4rem;
+    height: auto;
+    top: 4rem;
+}
+
+#eye-left {
+    left: 5rem;
+    animation: spin-clockwise 4s linear infinite;
+}
+
+#eye-right {
+    right: 5rem;
+    animation: spin-counterclockwise 4s linear infinite;
+}
+
+#mouth {
+    position: absolute;
+    width: 10rem;
+    height: auto;
+    top: 9rem;
+    left: 5rem;
+    animation: blink 1s step-start infinite;
+}
+
+#leaf-left {
+    position: absolute;
+    height: auto;
+    left: 0.5rem;
+    width: 10rem;
+    top: -2.2rem;
+}
+
+#leaf-right {
+    position: absolute;
+    height: auto;
+    right: -0.5rem;
+    width: 10rem;
+    top: -3.2rem;
+}
+
+#middlestick {
+    position: absolute;
+    width: 2.8rem;
+    height: auto;
+    top: -9rem;
+    left: 10rem;
+}
+
+@keyframes spin-clockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-counterclockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes blink {
+    0%, 30%, 50%, 75%, 100% {
+        opacity: 1;
+    }
+    25%, 35%, 70%, 85% {
+        opacity: 0;
+    }
+}
