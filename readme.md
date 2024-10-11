@@ -1,8 +1,4 @@
-# SVG - animering med hjälp av CSS och Javascript
+# SVG - create an SVG with CSS and Javascript
 
-## Så ser appen ut
-
-Skärmdump av hur pumpan ser ut:
-
-![Appens utseende](./assets/howitlooks.png)
+## Screenshot of project:
 
